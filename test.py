@@ -26,6 +26,6 @@ for x in range(1,80):
    
    
 
-
+#
 
 df.to_excel('test2.xlsx', sheet_name="Лист 1")

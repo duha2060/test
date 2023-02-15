@@ -16,8 +16,6 @@ list4 = [5,7,8,12,15,19,22,26,29,31,35,36,39,41,45,48,50,53,56,61,65,69]
 for x in range(1,71):
    if x in list1:
     df[x].mask(df[x] == 'Да', 2, inplace=True) or df[x].mask(df[x] == 'Не знаю', 1, inplace=True) or df[x].mask(df[x] == 'Нет', 0, inplace=True)
-    #a = df[x] + df[x]
-    #print(a)
     print(df[x])
    elif x in list2:
     df[x].mask(df[x] == 'Нет', 2, inplace=True) or df[x].mask(df[x] == 'Да', 0, inplace=True) or df[x].mask(df[x] == 'Не знаю', 1, inplace=True)
