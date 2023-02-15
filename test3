@@ -1,0 +1,13 @@
+from openpyxl import load_workbook
+ 
+list1 = [2,3,6,9,13,21,32,40,42,43,47,51,52,55,60,70]
+list2 = [1,14,20,27,37,63,66,67]
+list3 = [4,10,11,16,17,18,23,24,25,28,30,33,34,38,44,46,49,54,57,58,59,62,64,68]
+list4 = [5,7,8,12,15,19,22,26,29,31,35,36,39,41,45,48,50,53,56,61,65,69]
+
+ws = load_workbook('test1.xlsx').active
+ 
+for line in ws.iter_rows():
+ = (item.value for item in line)
+    print()
+
